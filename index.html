@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet"   href="styleCelular.css" media="screen and (max-width: 620px)">
+     <link rel="stylesheet"   href="style.css" media="screen and (min-width: 621px)">
+
+</head>
+
+<body onload="getPokemon()">
+
+    <h1>pokedex</h1>
+
+    <div class="pokedes">
+
+        <button id="botonDerecho" onclick="atras()">
+            << </button>
+                <button id="botonIzquierdo" onclick="sigiente()">>></button>
+                <div id="contenedorinfomacion">
+                    <div id="pantalla">
+                        <img id="imgPokemon" alt="">
+                    </div>
+
+                </div>
+                <div id="info">
+
+                    <form name="pokemonKeySend" method="POST" action="">
+                        <input disabled type="text" id="pokemonId" name="pokemonId" value="" onKeyUp="pokemonKeyId()" />
+                    </form>
+                    <hr>
+                    <div class="datos" id="name-display"></div>
+                    <hr>
+                    <div class="type">
+                        <p>Tipo</p>
+                        <span class="types" id="pokemonType"></span>
+                    </div>
+                </div>
+    </div>
+
+    <div class="pokedesInferior">
+        <div id="vebtanaEstadisticas">
+
+            <table>
+                <tr>
+                    <th>status</th>
+                    <th>Valor</th>
+
+
+                </tr>
+                <tr>
+                    <td>HP</td>
+                    <td id="hp"></td>
+
+                </tr>
+                <tr>
+                    <td>Ataque</td>
+                    <td id="ataque"></td>
+
+                </tr>
+                <tr>
+                    <td>Derensa</td>
+                    <td id="defansa"></td>
+
+                </tr>
+                <tr>
+                    <td>Velocidad</td>
+                    <td id="velocidad"></td>
+                </tr>
+                <tr>
+                    <td>Altura</td>
+                    <td id="altura"></td>
+                </tr>
+                <tr>
+                    <td>Peso</td>
+                    <td id="peso"></td>
+                </tr>
+
+            </table>
+        </div>
+
+
+
+    </div>
+
+<script src="scrip.js"></script>
+</body>
+
+</html>
